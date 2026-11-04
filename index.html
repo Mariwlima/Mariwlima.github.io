@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Mariana Lima — Full-Stack Developer</title>
-<meta name="description" content="Mariana Lima — self-taught full-stack developer with a Philosophy background. Python & JavaScript. Selected work: DailyPet, Plately, FamilyFlow." />
+<title>Mariana Lima — Full-Stack &amp; Mobile Developer</title>
+<meta name="description" content="Mariana Lima — full-stack and mobile developer working with React Native, React, TypeScript, Node.js and Python. Selected work: DailyPet, Plately, FamilyFlow." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -148,6 +148,10 @@
   .stack-row .label{font-family:"JetBrains Mono",monospace;font-size:.74rem;letter-spacing:.1em;
     text-transform:uppercase;color:var(--muted)}
   .stack-row .label::before{content:"› ";color:var(--accent)}
+  .cred{display:flex;flex-wrap:wrap;align-items:baseline;gap:.55rem 1rem}
+  .cred-t{color:var(--ink);font-size:1rem;font-weight:500}
+  .cred-link{font-family:"JetBrains Mono",monospace;font-size:.8rem;color:var(--accent);border-bottom:1px solid transparent;transition:border-color .2s}
+  .cred-link:hover{border-bottom-color:var(--accent)}
   .tags{display:flex;flex-wrap:wrap;gap:.55rem}
   .tag{font-family:"JetBrains Mono",monospace;font-size:.8rem;color:#cdd3e6;border:1px solid var(--line);
     border-radius:7px;padding:.34rem .7rem;background:var(--panel);transition:.2s}
@@ -247,6 +251,7 @@
       <a href="#work"    data-en="work"    data-pt="projetos">work</a>
       <a href="#about"   data-en="about"   data-pt="sobre">about</a>
       <a href="#stack"   data-en="stack"   data-pt="stack">stack</a>
+      <a href="#credentials" data-en="credentials" data-pt="formação">credentials</a>
       <a href="#contact" data-en="contact" data-pt="contato">contact</a>
     </nav>
     <div class="nav-right">
@@ -269,14 +274,14 @@
     <div class="wrap">
       <div class="hero-grid">
         <div>
-          <span class="eyebrow"><span class="sq"></span><span data-en="Full-stack developer" data-pt="Desenvolvedora full-stack">Full-stack developer</span><span class="rule"></span></span>
+          <span class="eyebrow"><span class="sq"></span><span data-en="Full-stack &amp; mobile developer" data-pt="Desenvolvedora full-stack &amp; mobile">Full-stack &amp; mobile developer</span><span class="rule"></span></span>
           <h1 data-en="I think in systems — then I <span class='key'>build</span> them."
               data-pt="Penso em sistemas — e então os <span class='key'>construo</span>.">
             I think in systems — then I <span class="key">build</span> them.
           </h1>
-          <p class="sub" data-en="Full-stack developer. I design and ship complete web apps — from authentication and data to the final pixel."
-             data-pt="Desenvolvedora full-stack. Eu projeto e publico aplicações web completas — da autenticação e dos dados até o último pixel.">
-            Full-stack developer. I design and ship complete web apps — from authentication and data to the final pixel.
+          <p class="sub" data-en="Full-stack and mobile developer. I design and ship complete web and mobile apps — from authentication and data to the final pixel."
+             data-pt="Desenvolvedora full-stack e mobile. Eu projeto e publico aplicações web e mobile completas — da autenticação e dos dados até o último pixel.">
+            Full-stack and mobile developer. I design and ship complete web and mobile apps — from authentication and data to the final pixel.
           </p>
           <div class="hero-cta">
             <a class="btn primary" href="#work" data-en="View work" data-pt="Ver projetos">View work</a>
@@ -297,8 +302,8 @@
             <span class="live"><span class="d"></span><span data-en="available" data-pt="disponível">available</span></span>
           </div>
           <dl>
-            <div class="row"><dt>role</dt><dd data-en="Full-stack developer" data-pt="Dev full-stack">Full-stack developer</dd></div>
-            <div class="row"><dt>stack</dt><dd>Python · JavaScript · React</dd></div>
+            <div class="row"><dt>role</dt><dd data-en="Full-stack &amp; mobile developer" data-pt="Dev full-stack &amp; mobile">Full-stack &amp; mobile developer</dd></div>
+            <div class="row"><dt>stack</dt><dd>React Native · TypeScript · Node.js · Python</dd></div>
             <div class="row"><dt>based</dt><dd data-en="Atlanta, GA → Brazil" data-pt="Atlanta, GA → Brasil">Atlanta, GA → Brazil</dd></div>
             <div class="row"><dt>status</dt><dd><span class="on" data-en="open to work · remote" data-pt="aberta a vagas · remoto">open to work · remote</span></dd></div>
           </dl>
@@ -322,9 +327,13 @@
            data-pt="Me formei em <strong>Filosofia na Universidade Federal Fluminense</strong>, onde aprendi a quebrar problemas confusos em premissas claras e segui-las até uma conclusão. Esse hábito é o centro de como eu escrevo código hoje.">
           I studied <strong>Philosophy at Universidade Federal Fluminense</strong>, where I learned to break messy problems into clear premises and follow them all the way to a conclusion. That habit is the core of how I write code today.
         </p>
-        <p data-en="I taught myself to build the practical way — finishing Harvard's <strong>CS50x</strong> and <strong>CS50W</strong> while shipping real, deployed projects in parallel. Today I work across the full stack in Python and JavaScript, and I'm heading toward Django and React with TypeScript."
-           data-pt="Aprendi a programar do jeito prático — concluindo o <strong>CS50x</strong> e o <strong>CS50W</strong> de Harvard enquanto publicava projetos reais em paralelo. Hoje atuo em toda a stack com Python e JavaScript, caminhando para Django e React com TypeScript.">
-          I taught myself to build the practical way — finishing Harvard's <strong>CS50x</strong> and <strong>CS50W</strong> while shipping real, deployed projects in parallel. Today I work across the full stack in Python and JavaScript, and I'm heading toward Django and React with TypeScript.
+        <p data-en="I learn by shipping. Alongside Harvard's <strong>CS50x</strong>, I've taken projects from idea to production, most recently a React Native app with a Supabase backend, row-level security and automated tests in CI. Today I work across web and mobile with TypeScript, React, React Native, Node.js and Python."
+           data-pt="Aprendo publicando. Junto com o <strong>CS50x</strong> de Harvard, levei projetos da ideia à produção, o mais recente um app em React Native com backend em Supabase, row-level security e testes automatizados no CI. Hoje atuo em web e mobile com TypeScript, React, React Native, Node.js e Python.">
+          I learn by shipping. Alongside Harvard's <strong>CS50x</strong>, I've taken projects from idea to production, most recently a React Native app with a Supabase backend, row-level security and automated tests in CI. Today I work across web and mobile with TypeScript, React, React Native, Node.js and Python.
+        </p>
+        <p data-en="I'm completing the <strong>IBM Full Stack Software Developer</strong> certificate and Harvard's <strong>CS50W</strong>, and I hold Google's <strong>Foundations of Project Management</strong> certificate, which shapes how I scope, plan and deliver work."
+           data-pt="Estou concluindo o certificado <strong>IBM Full Stack Software Developer</strong> e o <strong>CS50W</strong> de Harvard, e sou certificada em <strong>Foundations of Project Management</strong>, do Google, o que orienta como eu defino escopo, planejo e entrego.">
+          I'm completing the <strong>IBM Full Stack Software Developer</strong> certificate and Harvard's <strong>CS50W</strong>, and I hold Google's <strong>Foundations of Project Management</strong> certificate, which shapes how I scope, plan and deliver work.
         </p>
         <div class="about-cmt">
           <span class="cmt" data-en="yes, philosophy helps a lot with code" data-pt="sim, filosofia ajuda muito a programar">yes, philosophy helps a lot with code</span>
@@ -343,23 +352,59 @@
       <div class="reveal">
         <div class="stack-row">
           <div class="label" data-en="Languages" data-pt="Linguagens">Languages</div>
-          <div class="tags"><span class="tag">Python</span><span class="tag">JavaScript (ES6+)</span><span class="tag">TypeScript</span><span class="tag">SQL</span></div>
+          <div class="tags"><span class="tag">TypeScript</span><span class="tag">JavaScript (ES6+)</span><span class="tag">Python</span><span class="tag">SQL</span></div>
+        </div>
+        <div class="stack-row">
+          <div class="label" data-en="Mobile" data-pt="Mobile">Mobile</div>
+          <div class="tags"><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">iOS</span><span class="tag">Android</span></div>
         </div>
         <div class="stack-row">
           <div class="label" data-en="Frontend" data-pt="Frontend">Frontend</div>
-          <div class="tags"><span class="tag">React</span><span class="tag">React Native / Expo</span><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Bootstrap</span></div>
+          <div class="tags"><span class="tag">React</span><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Bootstrap</span></div>
         </div>
         <div class="stack-row">
           <div class="label" data-en="Backend" data-pt="Backend">Backend</div>
-          <div class="tags"><span class="tag">Flask</span><span class="tag">Node.js</span><span class="tag">REST APIs</span></div>
+          <div class="tags"><span class="tag">Node.js</span><span class="tag">Flask</span><span class="tag">REST APIs</span></div>
         </div>
         <div class="stack-row">
           <div class="label" data-en="Data &amp; auth" data-pt="Dados &amp; auth">Data &amp; auth</div>
-          <div class="tags"><span class="tag">PostgreSQL</span><span class="tag">Supabase</span><span class="tag">SQLite</span><span class="tag">Firebase / Firestore</span></div>
+          <div class="tags"><span class="tag">PostgreSQL</span><span class="tag">Supabase</span><span class="tag">Row-level security</span><span class="tag">SQLite</span><span class="tag">Firebase Auth</span><span class="tag">Cloud Firestore</span></div>
         </div>
         <div class="stack-row">
-          <div class="label" data-en="Tooling" data-pt="Ferramentas">Tooling</div>
-          <div class="tags"><span class="tag">Git</span><span class="tag">Docker</span><span class="tag">GitHub Copilot</span></div>
+          <div class="label" data-en="Workflow" data-pt="Fluxo de trabalho">Workflow</div>
+          <div class="tags"><span class="tag">Git &amp; GitHub</span><span class="tag">GitHub Actions</span><span class="tag">CI/CD</span><span class="tag" data-en="Automated testing" data-pt="Testes automatizados">Automated testing</span><span class="tag">Docker</span><span class="tag">Agile</span><span class="tag">GitHub Copilot</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDENTIALS -->
+  <section id="credentials">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow"><span class="sq"></span><span data-en="Credentials" data-pt="Formação">Credentials</span><span class="rule"></span></span>
+        <h2 data-en="Education &amp; certificates" data-pt="Formação e certificados">Education &amp; certificates</h2>
+      </div>
+      <div class="reveal">
+        <div class="stack-row">
+          <div class="label">Harvard</div>
+          <div class="cred"><span class="cred-t" data-en="CS50x: Introduction to Computer Science" data-pt="CS50x: Introduction to Computer Science">CS50x: Introduction to Computer Science</span><span class="tag" data-en="Certified" data-pt="Certificado">Certified</span></div>
+        </div>
+        <div class="stack-row">
+          <div class="label">Google</div>
+          <div class="cred"><span class="cred-t" data-en="Foundations of Project Management" data-pt="Foundations of Project Management">Foundations of Project Management</span><span class="tag" data-en="Nov 2026" data-pt="Nov 2026">Nov 2026</span><a class="cred-link" href="https://www.coursera.org/account/accomplishments/records/3AY19ZIV2R3K" target="_blank" rel="noopener" data-en="View credential" data-pt="Ver credencial">View credential</a></div>
+        </div>
+        <div class="stack-row">
+          <div class="label">IBM</div>
+          <div class="cred"><span class="cred-t" data-en="Full Stack Software Developer Professional Certificate" data-pt="Full Stack Software Developer Professional Certificate">Full Stack Software Developer Professional Certificate</span><span class="tag" data-en="In progress" data-pt="Em andamento">In progress</span></div>
+        </div>
+        <div class="stack-row">
+          <div class="label">Harvard</div>
+          <div class="cred"><span class="cred-t" data-en="CS50W: Web Programming with Python and JavaScript" data-pt="CS50W: Web Programming with Python and JavaScript">CS50W: Web Programming with Python and JavaScript</span><span class="tag" data-en="In progress" data-pt="Em andamento">In progress</span></div>
+        </div>
+        <div class="stack-row">
+          <div class="label">UFF</div>
+          <div class="cred"><span class="cred-t" data-en="B.A. in Philosophy, Universidade Federal Fluminense" data-pt="Bacharelado em Filosofia, Universidade Federal Fluminense">B.A. in Philosophy, Universidade Federal Fluminense</span><span class="tag" data-en="2018" data-pt="2018">2018</span></div>
         </div>
       </div>
     </div>
@@ -413,12 +458,12 @@
             </div>
             <span class="idx">02 / 03</span>
           </div>
-          <p class="desc" data-en="A full-stack recipe organizer with Firebase Authentication (email + Google) and per-user Firestore persistence. Includes a weekly meal planner, step-by-step cooking mode with wake-lock, servings scaling, and a shopping list grouped by category."
-             data-pt="Um organizador de receitas full-stack com autenticação Firebase (e-mail + Google) e persistência no Firestore por usuário. Inclui planejador semanal, modo de cozimento passo a passo com wake-lock, ajuste de porções e lista de compras agrupada por categoria.">
-            A full-stack recipe organizer with Firebase Authentication (email + Google) and per-user Firestore persistence. Includes a weekly meal planner, step-by-step cooking mode with wake-lock, servings scaling, and a shopping list grouped by category.
+          <p class="desc" data-en="A bilingual (EN/PT) full-stack recipe organizer with Firebase Authentication (email + Google) and per-user Firestore data protected by security rules. Includes a weekly meal planner, step-by-step cooking mode with wake-lock, servings scaling, a shopping list grouped by category and full account management."
+             data-pt="Um organizador de receitas full-stack bilíngue (PT/EN) com autenticação Firebase (e-mail + Google) e dados por usuário no Firestore, protegidos por regras de segurança. Inclui planejador semanal, modo de preparo passo a passo com wake-lock, ajuste de porções, lista de compras agrupada por categoria e gestão completa de conta.">
+            A bilingual (EN/PT) full-stack recipe organizer with Firebase Authentication (email + Google) and per-user Firestore data protected by security rules. Includes a weekly meal planner, step-by-step cooking mode with wake-lock, servings scaling, a shopping list grouped by category and full account management.
           </p>
           <div class="card-foot">
-            <div class="tags"><span class="tag">JavaScript</span><span class="tag">Firebase Auth</span><span class="tag">Firestore</span><span class="tag">CSS3</span></div>
+            <div class="tags"><span class="tag">JavaScript</span><span class="tag">Firebase Auth</span><span class="tag">Firestore</span><span class="tag">i18n</span></div>
             <div class="card-links">
               <a href="https://mariwlima.github.io/Plately" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
@@ -442,12 +487,12 @@
             </div>
             <span class="idx">03 / 03</span>
           </div>
-          <p class="desc" data-en="A full-stack Flask app that helps families coordinate routine and tasks: authentication, a FullCalendar dashboard, task management, a shared shopping list, and a simplified interface for kids."
-             data-pt="Um app full-stack em Flask que ajuda famílias a organizar rotina e tarefas: autenticação, painel com FullCalendar, gestão de tarefas, lista de compras compartilhada e uma interface simplificada para crianças.">
-            A full-stack Flask app that helps families coordinate routine and tasks: authentication, a FullCalendar dashboard, task management, a shared shopping list, and a simplified interface for kids.
+          <p class="desc" data-en="A full-stack Flask app that helps families coordinate routine and tasks: authentication with role-based access, a FullCalendar dashboard, task management, a shared shopping list and a simplified interface for kids. Deployed on Render."
+             data-pt="Um app full-stack em Flask que ajuda famílias a organizar rotina e tarefas: autenticação com controle de acesso por perfil, painel com FullCalendar, gestão de tarefas, lista de compras compartilhada e uma interface simplificada para crianças. Publicado no Render.">
+            A full-stack Flask app that helps families coordinate routine and tasks: authentication with role-based access, a FullCalendar dashboard, task management, a shared shopping list and a simplified interface for kids. Deployed on Render.
           </p>
           <div class="card-foot">
-            <div class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">SQLite</span><span class="tag">FullCalendar.js</span></div>
+            <div class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">SQLite</span><span class="tag">JavaScript</span><span class="tag">FullCalendar.js</span></div>
             <div class="card-links">
               <a href="https://familyflow-ib6n.onrender.com" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
@@ -495,9 +540,9 @@
       <div class="reveal">
         <span class="eyebrow"><span class="sq"></span><span data-en="Contact" data-pt="Contato">Contact</span><span class="rule"></span></span>
         <h2 data-en="Let's build something." data-pt="Vamos construir algo.">Let's build something.</h2>
-        <p class="lead" data-en="Open to full-stack roles — remote, or based in Brazil. The best ways to reach me:"
-           data-pt="Aberta a vagas full-stack — remotas ou no Brasil. Os melhores jeitos de falar comigo:">
-          Open to full-stack roles — remote, or based in Brazil. The best ways to reach me:
+        <p class="lead" data-en="Open to junior full-stack, front-end and mobile roles — remote for companies in the US, Europe or Brazil, or hybrid in Atlanta. The best ways to reach me:"
+           data-pt="Aberta a vagas júnior full-stack, front-end e mobile — remotas para empresas dos EUA, da Europa ou do Brasil, ou híbridas em Atlanta. Os melhores jeitos de falar comigo:">
+          Open to junior full-stack, front-end and mobile roles — remote for companies in the US, Europe or Brazil, or hybrid in Atlanta. The best ways to reach me:
         </p>
       </div>
       <div class="contact-links reveal">
