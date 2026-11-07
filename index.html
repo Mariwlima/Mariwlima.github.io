@@ -130,14 +130,6 @@
   .chip.c2{bottom:8%;left:7%}
   .chip .dot{width:7px;height:7px;border-radius:50%;background:var(--cyan)}
 
-  /* ---------- highlights ---------- */
-  .hl{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:18px;background:rgba(15,15,26,.6);overflow:hidden}
-  .hl div{padding:1.6rem 1.8rem;border-right:1px solid var(--line)}
-  .hl div:last-child{border-right:0}
-  .hl b{display:block;font-size:2rem;font-weight:600;letter-spacing:-.03em;line-height:1.25;
-    background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .hl span{font-size:.86rem;color:var(--muted)}
-
   /* ---------- section frame ---------- */
   .section{padding:110px 0}
   .section.tight{padding-top:40px}
@@ -269,9 +261,6 @@
     .proj,.proj.rev{grid-template-columns:1fr}
     .proj.rev .pv{order:0}
     .pv{min-height:300px}
-    .hl{grid-template-columns:repeat(2,1fr)}
-    .hl div:nth-child(2){border-right:0}
-    .hl div:nth-child(-n+2){border-bottom:1px solid var(--line)}
     .stack{grid-template-columns:repeat(2,1fr)}
     .cr{grid-template-columns:1fr;gap:.45rem}
     .cta-band{padding:2.4rem 1.6rem}
@@ -286,9 +275,6 @@
     .chip{font-size:.7rem}
     .chip.c1{top:14px;right:14px}
     .chip.c2{bottom:14px;left:14px}
-    .hl div{padding:1.2rem}
-    .hl b{font-size:1.35rem}
-    .hl span{font-size:.8rem}
     .stack{grid-template-columns:1fr}
     .resume-row{padding:1.6rem}
     .clinks a{padding:.95rem 1rem;gap:.8rem}
@@ -317,8 +303,8 @@
     <a class="brand" href="#top" aria-label="Mariana Lima — home">mariana<span>.</span></a>
     <nav class="links" id="navlinks" aria-label="Primary">
       <a href="#top"         data-en="home"        data-pt="início">home</a>
-      <a href="#work"        data-en="work"        data-pt="projetos">work</a>
       <a href="#about"       data-en="about"       data-pt="sobre">about</a>
+      <a href="#work"        data-en="work"        data-pt="projetos">work</a>
       <a href="#stack"       data-en="stack"       data-pt="stack">stack</a>
       <a href="#credentials" data-en="credentials" data-pt="formação">credentials</a>
       <a href="#contact"     data-en="contact"     data-pt="contato">contact</a>
@@ -377,21 +363,38 @@
         </aside>
       </div>
     </div>
-    <a class="scroll-hint" href="#work"><span data-en="Scroll to discover" data-pt="Role para descobrir">Scroll to discover</span><i></i></a>
+    <a class="scroll-hint" href="#about"><span data-en="Scroll to discover" data-pt="Role para descobrir">Scroll to discover</span><i></i></a>
   </section>
 
-  <!-- HIGHLIGHTS -->
-  <div class="wrap reveal">
-    <div class="hl">
-      <div><b>03</b><span data-en="apps designed &amp; shipped" data-pt="apps projetados e publicados">apps designed &amp; shipped</span></div>
-      <div><b>130+</b><span data-en="database security tests" data-pt="testes de segurança no banco">database security tests</span></div>
-      <div><b>iOS + Android</b><span data-en="one codebase" data-pt="um único código">one codebase</span></div>
-      <div><b>EN / PT</b><span data-en="bilingual products" data-pt="produtos bilíngues">bilingual products</span></div>
+  <!-- ABOUT -->
+  <section class="section tight" id="about">
+    <div class="wrap about">
+      <div class="reveal">
+        <span class="eyebrow" data-en="About" data-pt="Sobre">About</span>
+        <h2 class="big"
+            data-en="Analytical thinking, turned into <em>working software.</em>"
+            data-pt="Pensamento analítico, virando <em>software.</em>">Analytical thinking, turned into <em>working software.</em></h2>
+        <div class="note" data-en="yes, philosophy helps a lot with code" data-pt="sim, filosofia ajuda muito a programar">yes, philosophy helps a lot with code</div>
+      </div>
+      <div class="about-body reveal">
+        <p data-en="I studied <strong>Philosophy at Universidade Federal Fluminense</strong>, where I learned to break messy problems into clear premises and follow them all the way to a conclusion. That habit is the core of how I write code today."
+           data-pt="Me formei em <strong>Filosofia na Universidade Federal Fluminense</strong>, onde aprendi a quebrar problemas confusos em premissas claras e segui-las até uma conclusão. Esse hábito é o centro de como eu escrevo código hoje.">
+          I studied <strong>Philosophy at Universidade Federal Fluminense</strong>, where I learned to break messy problems into clear premises and follow them all the way to a conclusion. That habit is the core of how I write code today.
+        </p>
+        <p data-en="I learn by shipping. Alongside Harvard's <strong>CS50x</strong>, I've taken projects from idea to production, most recently a React Native app with a Supabase backend, row-level security and automated tests in CI. Today I work across web and mobile with TypeScript, React, React Native, Node.js and Python."
+           data-pt="Aprendo publicando. Junto com o <strong>CS50x</strong> de Harvard, levei projetos da ideia à produção, o mais recente um app em React Native com backend em Supabase, row-level security e testes automatizados no CI. Hoje atuo em web e mobile com TypeScript, React, React Native, Node.js e Python.">
+          I learn by shipping. Alongside Harvard's <strong>CS50x</strong>, I've taken projects from idea to production, most recently a React Native app with a Supabase backend, row-level security and automated tests in CI. Today I work across web and mobile with TypeScript, React, React Native, Node.js and Python.
+        </p>
+        <p data-en="I'm completing the <strong>IBM Full Stack Software Developer</strong> certificate and Harvard's <strong>CS50W</strong>, and I hold Google's <strong>Foundations of Project Management</strong> certificate, which shapes how I scope, plan and deliver work."
+           data-pt="Estou concluindo o certificado <strong>IBM Full Stack Software Developer</strong> e o <strong>CS50W</strong> de Harvard, e sou certificada em <strong>Foundations of Project Management</strong>, do Google, o que orienta como eu defino escopo, planejo e entrego.">
+          I'm completing the <strong>IBM Full Stack Software Developer</strong> certificate and Harvard's <strong>CS50W</strong>, and I hold Google's <strong>Foundations of Project Management</strong> certificate, which shapes how I scope, plan and deliver work.
+        </p>
+      </div>
     </div>
-  </div>
+  </section>
 
   <!-- WORK -->
-  <section class="section" id="work">
+  <section class="section tight" id="work">
     <div class="wrap">
       <div class="sec-head reveal">
         <span class="eyebrow" data-en="Selected work" data-pt="Projetos">Selected work</span>
@@ -490,33 +493,6 @@
           </div>
         </div>
       </article>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="section tight" id="about">
-    <div class="wrap about">
-      <div class="reveal">
-        <span class="eyebrow" data-en="About" data-pt="Sobre">About</span>
-        <h2 class="big"
-            data-en="Analytical thinking, turned into <em>working software.</em>"
-            data-pt="Pensamento analítico, virando <em>software.</em>">Analytical thinking, turned into <em>working software.</em></h2>
-        <div class="note" data-en="yes, philosophy helps a lot with code" data-pt="sim, filosofia ajuda muito a programar">yes, philosophy helps a lot with code</div>
-      </div>
-      <div class="about-body reveal">
-        <p data-en="I studied <strong>Philosophy at Universidade Federal Fluminense</strong>, where I learned to break messy problems into clear premises and follow them all the way to a conclusion. That habit is the core of how I write code today."
-           data-pt="Me formei em <strong>Filosofia na Universidade Federal Fluminense</strong>, onde aprendi a quebrar problemas confusos em premissas claras e segui-las até uma conclusão. Esse hábito é o centro de como eu escrevo código hoje.">
-          I studied <strong>Philosophy at Universidade Federal Fluminense</strong>, where I learned to break messy problems into clear premises and follow them all the way to a conclusion. That habit is the core of how I write code today.
-        </p>
-        <p data-en="I learn by shipping. Alongside Harvard's <strong>CS50x</strong>, I've taken projects from idea to production, most recently a React Native app with a Supabase backend, row-level security and automated tests in CI. Today I work across web and mobile with TypeScript, React, React Native, Node.js and Python."
-           data-pt="Aprendo publicando. Junto com o <strong>CS50x</strong> de Harvard, levei projetos da ideia à produção, o mais recente um app em React Native com backend em Supabase, row-level security e testes automatizados no CI. Hoje atuo em web e mobile com TypeScript, React, React Native, Node.js e Python.">
-          I learn by shipping. Alongside Harvard's <strong>CS50x</strong>, I've taken projects from idea to production, most recently a React Native app with a Supabase backend, row-level security and automated tests in CI. Today I work across web and mobile with TypeScript, React, React Native, Node.js and Python.
-        </p>
-        <p data-en="I'm completing the <strong>IBM Full Stack Software Developer</strong> certificate and Harvard's <strong>CS50W</strong>, and I hold Google's <strong>Foundations of Project Management</strong> certificate, which shapes how I scope, plan and deliver work."
-           data-pt="Estou concluindo o certificado <strong>IBM Full Stack Software Developer</strong> e o <strong>CS50W</strong> de Harvard, e sou certificada em <strong>Foundations of Project Management</strong>, do Google, o que orienta como eu defino escopo, planejo e entrego.">
-          I'm completing the <strong>IBM Full Stack Software Developer</strong> certificate and Harvard's <strong>CS50W</strong>, and I hold Google's <strong>Foundations of Project Management</strong> certificate, which shapes how I scope, plan and deliver work.
-        </p>
-      </div>
     </div>
   </section>
 
